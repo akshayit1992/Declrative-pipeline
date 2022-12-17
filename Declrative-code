@@ -27,7 +27,7 @@ pipeline {
        {
        always
        {
-       slackSend channel: 'jenkins-slack-intakshay', color: 'green', message: 'success message from jenkins declarative pipeline ALSO, ${env.JOB_NAME} ${env.BUILD_NUMBER} ${env.BUILD_URL} '
+       slackSend channel: 'jenkins-slack-intakshay', color: 'green', message: " success message from jenkins declarative pipeline ALSO  ${env.JOB_NAME} ${env.BUILD_NUMBER} ${env.BUILD_URL} "
         }
         }
    
