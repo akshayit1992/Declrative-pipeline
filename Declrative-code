@@ -19,5 +19,16 @@ pipeline {
                 echo 'I am in Deploy Phase'
             }
         }
+        
     }
+        
+        
+        post 
+       {
+       always
+       {
+       slackSend channel: 'jenkins-slack-intakshay', color: 'red', message: 'success message pls go to slack '
+        }
+        }
+   
 }
